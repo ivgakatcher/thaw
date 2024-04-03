@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    //    Scanner scanner = new Scanner(System.in);
-    //    System.out.println("Введите общее количество дней: ");
-    //    int n = scanner.nextInt();
-    //    System.out.println("Введите температуру по дням: ");
         int[] temp = inputTemp();
         int avgTemp = analyzeWarm(temp);
         System.out.println("Продолжительность положительной среднесуточной температуры: "+avgTemp);
@@ -24,7 +20,6 @@ public class Main {
         return temp;
     }
     public static int analyzeWarm(int[] temp){
-        //int[] temp = inputTemp();
         int n = temp.length;
         int c = 0;
         int stor = 0;
